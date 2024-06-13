@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <title>New Account</title>
+</head>
+<body>
+  <!-- *****Header Start***** -->
+    <div class="menu">
+        <div class="nav-icon">
+            <a href="home.html"><img src="nav-logo.png"></a>
+        </div>
+        <div class="after-login-menu-ops-a">
+            <a href="home-login.html">Home</a>
+            <a href="newaccount.html">New Account</a>
+            <a href="checkbalance.html">Check Balance</a>
+            <a href="transfer.html">Transfer</a>
+            <a href="debit.html">Debit</a>
+            <a href="credit.html">Credit</a>
+            <a href="transectionhistory.html">Transection History</a>
+            <a href="changepassword.html">Change Password</a>
+            <a href="logout">Logout</a> 
+        </div>   
+        <div class="menu-ops-img">
+            <img src="75logo.png">
+            <img src="g2logo.png">
+        </div>
+    </div>
+<!-- *****End of Header***** -->
+
+    <div class="newacc-form">
+        <form action="newaccount">
+                <legend>New Account Details</legend><br><br>
+                <input type="text" class="natxtbx" required placeholder="User Name" name="username">
+                <input type="text" class="natxtbx" pattern="[0-9]{12}" maxlength="12" required placeholder="Aadhar Number" name="adharno"><br><br>
+                <input type="email" class="natxtbx" required placeholder="Email" name="email">
+                <input type="text" class="natxtbx" pattern="[0-9]{10}" maxlength="10" required placeholder="Mobile Number" name="mobileno"><br><br>
+                <input type="text" class="natxtbx" required placeholder="Father Name" name="fathername">
+                <input type="number" class="natxtbx" required placeholder="Opening Balance" name="openbal"><br><br>
+                <div class="gen"><label class="lbl">Gender:</label>
+                <label class="op-lbl">Male</label><input type="radio" class="radio-option" required value="Male" name="gender">
+                <label class="op-lbl">Female</label><input type="radio" class="radio-option" value="Female" name="gender">
+                </div>
+                <div class="acctype"><label class="lbl">Account Type:</label>
+                <label class="op-lbl">Savings</label><input type="radio"  value="Savings" name="account">
+                <label class="op-lbl">Current</label><input type="radio"  value="Current" name="account">
+                </div><br><br><br>
+                <input type="submit" value="Open Account" class="nabtn"><br><br>
+       

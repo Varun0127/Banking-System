@@ -1,0 +1,41 @@
+create table employee
+(
+name varchar(20) not null,
+password varchar(20) not null,
+email varchar(50) not null,
+mobileno number not null
+);
+
+create table accountdata
+(
+name varchar(20) not null,
+accountno number not null,
+adhar number not null,
+email varchar(50) not null,
+mobileno number not null,
+fathername varchar(20) not null,
+balance number not null,
+gender varchar(20) not null,
+accounttype varchar(20) not null,
+updatedata varchar(20)
+);
+
+create table credit(
+name varchar(20) not null,
+amount number not null,
+datecredit date not null
+);
+
+create table debit(
+name varchar(20) not null,
+amount number not null,
+datedebit date not null
+);
+
+create table transaction(
+name varchar(20) not null,
+sender number not null,
+receiver number not null,
+amount number not null,
+datetransaction date not null
+);

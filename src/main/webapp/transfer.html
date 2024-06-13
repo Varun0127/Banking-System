@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Transfer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+ <!-- *****Header Start***** -->
+    <div class="menu">
+        <div class="nav-icon">
+            <a href="home.html"><img src="nav-logo.png"></a>
+        </div>
+        <div class="after-login-menu-ops-a">
+            <a href="home-login.html">Home</a>
+            <a href="newaccount.html">New Account</a>
+            <a href="checkbalance.html">Check Balance</a>
+            <a href="transfer.html">Transfer</a>
+            <a href="debit.html">Debit</a>
+            <a href="credit.html">Credit</a>
+            <a href="transectionhistory.html">Transection History</a>
+            <a href="changepassword.html">Change Password</a>
+            <a href="logout">Logout</a> 
+        </div>   
+        <div class="menu-ops-img">
+            <img src="75logo.png">
+            <img src="g2logo.png">
+        </div>
+    </div>
+<!-- *****End of Header***** -->
+    
+    <div class="login-form">
+        <form action="transfer">
+                <legend>Money Transfer</legend><br><br>
+                <input type="text" class="lgtxtbx" required placeholder="Receiver's Account" name="receiveraccno"><br><br>
+                <input type="text" class="lgtxtbx" required placeholder="Amount to be transferred" name="transferamount"><br><br>
+                <input type="submit" value="Pay" class="loginbtn"><br><br>
+        

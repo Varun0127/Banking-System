@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-image: url(bg.jpg);
+    background-size:cover;
+}
+
+/* *****Header Start***** */
+.menu{
+    height: 62px;
+    background-color: #a20a3a;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.menu-ops{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+} 
+
+.menu-ops-a a{
+    margin-right: 20px;
+}
+
+a:link{
+    color: rgb(250, 210, 79);
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(250, 210, 79);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.menu-ops-img{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+/* *****End of Header***** */
+
+/* ------Home Page------ */
+.pnb-home{
+    width: 80%;
+    height: 250px;
+    background-image: url("images.png");
+    background-size: cover;
+    margin: 5% 10% 5% 10%;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+/* ------End of Home Page------ */

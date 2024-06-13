@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <title>Update Data</title>
+</head>
+<body>
+ <!-- *****Header Start***** -->
+    <div class="menu">
+        <div class="nav-icon">
+            <a href="home.html"><img src="nav-logo.png"></a>
+        </div>
+        <div class="menu-ops-a">
+            <a href="home-admin.html">Home</a>
+            <a href="accountdetails.html">Account Details</a>
+            <a href="transectionhistoryadmin.html">Transection History</a>
+            <a href="debithistory.html">Debit History</a>
+            <a href="credithistory.html">Credit  History</a>
+            <a href="logout">Logout</a> 
+        </div>   
+        <div class="menu-ops-img">
+            <img src="75logo.png">
+            <img src="g2logo.png">
+        </div>
+    </div>
+<!-- *****End of Header***** -->
+
+<div class="login-form">
+    <form action="update">
+            <legend>Update Data</legend><br><br>
+            <div class="usertype">
+                <label class="lbluser">Field Name:</label>
+                <select class="user-type-select" id="fieldname" name="fieldname" required>
+                    <option value="">--Select Field--</option>
+                    <option value="name">Name</option>
+                    <option value="adhar">Aadhaar Number</option>
+                    <option value="email">Email</option>
+                    <option value="mobileno">Mobile Number</option>
+                    <option value="fathername">Father Name</option>
+                    <option value="gender">Gender</option>
+                    <option value="accounttype">Account Type</option>
+                </select>    
+            </div>
+            <input type="text" class="lgtxtbx" required placeholder="Username" name="username"><br><br>
+            <input type="text" class="lgtxtbx" required placeholder="New Value" name="newvalue"><br><br>
+            <input type="submit" value="Update" class="loginbtn"><br><br>
+    

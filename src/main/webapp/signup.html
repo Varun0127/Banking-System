@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <title>Sign Up</title>
+</head>
+<body>
+      <!-- *****Header Start***** -->
+    <div class="menu">
+        <div class="nav-icon">
+			<a href="home.html"><img src="nav-logo.png"></a>
+		</div>
+        <div class="menu-ops">
+            <div class="menu-ops-a">
+                <a href="home.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="contactus.html">Contact Us</a>
+            </div>    
+            <div class="menu-ops-img">
+                <img src="75logo.png">
+                <img src="g2logo.png">
+            </div>
+        </div>      
+    </div>
+    <!-- ****End of Header***** -->
+    
+    <div class="signup-form">
+        <form action="signup">
+                <legend>Sign UP</legend><br><br>
+                <div class="usertype">
+                <label class="lbluser">User Type:</label>
+                <select class="user-type-select" id="usertype" name="usertype">
+                    <option>--Select Type--</option>
+                    <option>Admin</option>
+                    <option>User</option>
+                </select>    
+            </div>
+                <input type="text" class="suptxtbx" required placeholder="User Name" name="username" id="username"><br><br>
+                <input type="email" class="txtbx" required placeholder="Email" name="email" id="email">
+                <input type="tel" class="txtbx" required maxlength="10" pattern="[0-9]{10}" placeholder="Mobile Number" id="mobileno" name="mobileno"><br><br>
+                <input type="password" class="txtbx" required placeholder="Password" id="password" name="password">
+                <input type="text" class="txtbx" required placeholder="Confirm Password" id="confirm_password"><br><br>
+                <input type="submit" value="Sign Up" class="regbtn" onclick="validate()"><br><br>
+                <div class="lglink">Already have an Account? <a href="login.html">Login here</a></div>
